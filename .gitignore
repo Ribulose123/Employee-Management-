@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/EmployeeManagement/bin/Debug/net8.0
+/EmployeeManagement/obj
+/EmployeeManagement.Domain/obj
+/EmployeeManagement.Domain/bin/Debug/net8.0
+/EmployeeManagement.Persistence/obj
+/EmployeeManagement.Persistence/bin/Debug/net8.0
