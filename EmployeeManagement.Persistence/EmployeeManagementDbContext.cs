@@ -23,5 +23,6 @@ namespace EmployeeManagement.Persistence
         {
             get; set;
         }
+        public DbSet<Department> Departments { get; set; }
     }
 }
