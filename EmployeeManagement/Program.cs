@@ -1,9 +1,11 @@
+using AutoMapper;
+using EmployeeManagement.API.Interfaces;
 using EmployeeManagement.API.Mapping;
 using EmployeeManagement.API.MiddleWare;
+using EmployeeManagement.API.Services;
 using EmployeeManagement.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
-using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,9 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 //Add automapper
 builder.Services.
     AddAutoMapper(typeof(AutoMapperProfile));
+
+
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 
 
 // ? Correct AddDbContext syntax:
