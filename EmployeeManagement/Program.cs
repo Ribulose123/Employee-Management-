@@ -21,6 +21,8 @@ builder.Services.
 
 
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IEmployeeServices, EmployeeServices>();
+
 
 
 // ? Correct AddDbContext syntax:
